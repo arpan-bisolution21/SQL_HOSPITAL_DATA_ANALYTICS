@@ -1,91 +1,178 @@
-📊 Hospital Data Analysis — SQL Project
+#   Hospital Data Analytics Project
+### SQL-Based Healthcare Operations Analysis
 
-This project contains a comprehensive SQL script with 34 queries designed to analyze hospital-related datasets, including Admissions, Doctors, Patients and Province Names.
-The goal is to demonstrate SQL proficiency into Three Levels  — Basic, Intermediate, and Advanced — while deriving meaningful insights from medical records.
+---
 
-🧰 Technologies Used :
+## 📌 Table of Contents
 
-SQL (MySQL Workbench)
+- [Business Objective](#business-objective)
+- [Project Brief](#project-brief)
+- [Data Overview](#data-overview)
+- [Tools & Techniques](#tools--techniques)
+- [Key Insights](#key-insights)
+- [Business Recommendations](#business-recommendations)
+- [Project Link](#project-link)
+- [Acknowledgement](#acknowledgement)
+- [Future Improvements](#future-improvements)
 
-Relational Database Concepts (Joins, Grouping, Aggregation)
+---
 
-Data Cleaning & Transformation Techniques
+## Business Objective
 
-🗂️ Query Classification (Basic → Intermediate → Advanced) :
+To analyze hospital admission data and extract operational insights related to patient admissions, hospital stay durations, doctor workload, and healthcare resource utilization.
 
-Below is the classification of all 34 Queries from the SQL Script into Three Levels based on Complexity and Operational Use.
+The goal of this project is to enable:
 
-🟦 1. BASIC LEVEL QUERIES :
+- Data-driven operational planning for hospital administrators  
+- Improved patient flow and bed utilization strategies  
+- Better monitoring of treatment patterns and readmissions  
+- Identification of diagnoses that consume the highest hospital resources  
 
-These Queries focus on Simple Filtering, Selecting, Ordering, and Basic Conditions.
-| Query No. | Description                                         |
-| --------: | --------------------------------------------------- |
-|     **1** | Select basic Patient details based on Gender        |
-|     **2** | Identify Patients without Allergies (NULL cleaning) |
-|     **3** | Names starting with a Specific Letter               |
-|     **4** | Weight-Based Filtering using `BETWEEN`              |
-|     **5** | Updating NULL values with Defaults                  |
-|     **6** | Concatenate First and Last Names                    |
-|     **7** | Basic JOIN to show Province Names                   |
-|     **8** | Count Patients born in a Specific Year              |
-|     **9** | Patient with the Maximum Height                     |
-|    **10** | Retrieve Specific IDs using `IN`                    |
-|    **11** | Total Numbers of Admissions                          |
-|    **12** | Same-Day Admission & Discharge Records              |
-|    **13** | Count Admissions for a Specific Patient             |
-|    **14** | Unique City Names for a Province                    |
-|    **15** | Filtering using Multiple Conditions                 |
-|    **16** | Unique Birth-Years (DISTINCT + ORDER)               |
-|    **17** | First Names that occur only Once                    |
-|    **18** | Pattern Matching with `LIKE`                        |
+---
 
-🟩 2. INTERMEDIATE LEVEL QUERIES :
+## Project Brief
 
-These Queries apply Grouping, Aggregation, Conditional Logic, Ordering by Derived Fields, and Simple Joins.
-| Query No. | Description                                         |
-| --------: | --------------------------------------------------- |
-|     **19** | Join Patients & Admissions to Filter a Diagnosis    |
-|     **20** | Order Names by Character Length                     |
-|     **21** | Male vs Female Counts using CASE WHEN               |
-|     **22** | Patients admitted Multiple Times for same Diagnosis |
-|     **23** | City-Wise Patient Counts with Sorting               |
-|     **24** | Combine Patients + Doctors using `UNION ALL`        |
-|     **25** | Allergy Frequency Analysis                          |
-|     **26** | Date range Filtering for 1970s                      |
-|     **27** | Format Full Names using UPPER/LOWER + CONCAT        |
-|     **28** | Sum of Heights per Province (HAVING clause)         |
-|     **29** | Weight-Range Analysis using MAX – MIN               |
-|     **30** | Admissions Per-Day of Month                         |
-|     **31** | Group Patients by Weight Groups                     |
-|     **32** | Calculate Obesity Boolean using BMI Formula         |
+This SQL-based analytics project explores hospital operational data to generate insights into patient admissions, treatment patterns, and hospital capacity usage.
 
-🟥 3. ADVANCED LEVEL QUERIES :
+The analysis focuses on answering practical management questions such as:
 
-These involve Multiple-Table Joins, Conditional Logic, Grouping Logic, and creating Computed Fields for Secured Data Processes.
-| Query No. | Description                                                             |
-| --------: | ----------------------------------------------------------------------- |
-|    **33** | Multi-Table Join (Patients + Admissions + Doctors) with Dual Conditions |
-|    **34** | Generate Temporary Passwords combining ID + Name Length + Birth Year   |
+- Which diagnoses lead to the longest hospital stays  
+- Which doctors handle the highest number of admissions  
+- Which patients experience frequent readmissions  
+- What diagnoses consume the most hospital bed-days  
+- How admissions fluctuate over time  
 
-📘 Key Concepts Demonstrated :
+The project is structured into three analytical segments:
 
-| Category                     | Concepts Demonstrated |
-|-----------------------------|------------------------|
-| **Data Retrieval**          | SELECT Statements, Ordering, Filtering, Pattern Matching (LIKE), DISTINCT Usage |
-| **Data Cleaning**           | Handling NULL Values, Updating Missing Fields, Replacing Placeholders (e.g., Allergies) |
-| **Aggregations**            | COUNT, SUM, MAX, MIN, GROUP BY, HAVING, Derived Grouping (Weight Brackets) |
-| **Date Operations**         | Filtering by Year, Decade, Extracting Day from Date, Sorting by Date-Range |
-| **String Manipulation**     | CONCAT, CONCAT_WS, UPPER, LOWER, LENGTH, Custom Formatting of Names |
-| **Conditional Logic**       | CASE WHEN Expressions, Boolean Flags (e.g., Obesity) |
-| **Joins & Relationships**   | INNER JOIN across Patients, Doctors & Admissions Tables, Multi-Table Joins |
-| **Advanced Filtering**      | Pattern Rules (Start-End Characters, Specific Lengths), Multiple Conditions |
-| **Union Operations**        | UNION ALL to combine Patient & Doctor Records |
-| **Analytical Scenarios**    | City Segmentation, Diagnosis History, Admission Frequency Analysis |
-| **Mathematical Calculations** | BMI Formula using POWER & Arithmetic Operations |
-| **Security Logic**          | Temporary Password Generation using Concatenation of Fields |
+1. **Operational Efficiency Analysis**
+2. **Patient & Treatment Insights**
+3. **Hospital Capacity & Resource Utilization**
 
-🙌 Acknowledgements :
+The SQL queries transform raw hospital records into meaningful insights that can support **better healthcare operations management**.
 
-This Project was developed using the dataset provided by Datamites Internship Team and MySQL Workbench to provide Insights for Job Seekers, Recruiters, and Policy Makers.
+---
 
-👉 Here is the complete link of the SQL Script of the Queries : https://github.com/arpan-bisolution21/SQL_HOSPITAL_DATA_ANALYSIS/blob/d0b792d8f3b644fb1f4401648c218b091892e926/HOSPITAL_DATA_ANALYSIS.sql
+## Data Overview
+
+The dataset consists of **four relational tables** representing hospital operations.
+
+### Tables Included
+
+| Table | Description |
+|------|-------------|
+| Admissions | Patient admission records including diagnosis, admission date, discharge date, and attending doctor |
+| Patients | Patient demographic information |
+| Doctors | Doctor details and medical specialties |
+| Province Names | Mapping table for province identification |
+
+### Dataset Coverage
+
+**June 6, 2018 – June 5, 2019**
+
+Because the dataset spans a partial calendar year, admission trends were analyzed using **monthly patterns instead of yearly comparisons**.
+
+---
+
+## Tools & Techniques
+
+### Data Preparation
+
+- Multi-table relational dataset loading
+- Data validation and quality checks
+- Filtering inconsistent records (invalid discharge dates)
+
+### Data Analysis
+
+SQL techniques used include:
+
+- INNER JOIN for relational data analysis  
+- Aggregation functions (`COUNT`, `AVG`, `SUM`)  
+- Date functions (`DATEDIFF`, `DATE_FORMAT`, `TIMESTAMPDIFF`)  
+- Conditional logic using `CASE`  
+- Grouping and filtering using `GROUP BY` and `HAVING`  
+- Subqueries for advanced analytical calculations  
+
+### Analytical Focus
+
+The analysis focuses on:
+
+- Hospital **Length of Stay (LOS)** analysis  
+- **Doctor workload distribution**  
+- **Patient readmission patterns**  
+- **Hospital bed utilization metrics**  
+- **Admission trend analysis**
+
+---
+
+## Key Insights
+
+### 1️⃣ Operational Efficiency
+
+- Hospital length of stay varies significantly across diagnoses.  
+- Some doctors manage considerably higher admission volumes than others.  
+- Long hospital stays contribute to increased bed utilization pressure.  
+- Certain cities and provinces generate higher patient admission volumes.
+
+---
+
+### 2️⃣ Patient & Treatment Insights
+
+- A small group of patients accounts for multiple hospital admissions.  
+- Certain diagnoses show higher likelihood of readmissions.  
+- Patient demographic patterns influence admission frequency.  
+- Missing allergy records highlight potential data quality issues.
+
+---
+
+### 3️⃣ Hospital Capacity & Resource Utilization
+
+- A limited number of diagnoses consume a large share of total hospital bed-days.  
+- Long-stay admissions significantly affect hospital capacity.  
+- Monthly admission patterns reveal fluctuating hospital demand.  
+- Some treatment categories require longer resource allocation.
+
+---
+
+## Business Recommendations
+
+### For Hospital Administrators
+
+- Monitor diagnoses associated with **long hospital stays** to optimize treatment workflows.  
+- Evaluate doctor workload distribution to ensure balanced patient management.  
+- Implement discharge optimization strategies to improve bed availability.
+
+### For Healthcare Operations Teams
+
+- Track frequent patient readmissions for early intervention programs.  
+- Improve patient record completeness (e.g., allergy information).  
+- Use admission trends to support better staffing and capacity planning.
+
+---
+
+## Project Link
+
+🔗 **[View the SQL Project Repository](https://github.com/arpan-bisolution21/HOSPITAL_DATA_ANALYTICS_SQL)**
+
+---
+
+## Acknowledgement
+
+This project was developed as part of a structured Business Intelligence portfolio initiative focused on applying SQL-based data analysis to real-world operational datasets.
+
+The project demonstrates how SQL can transform raw healthcare data into meaningful insights for operational decision-making.
+
+---
+
+## Future Improvements
+
+- Extend the dataset to include multi-year hospital records for trend analysis  
+- Develop Power BI dashboards for interactive hospital performance monitoring  
+- Integrate predictive models for patient readmission risk  
+- Incorporate cost analysis metrics for hospital financial insights  
+- Build automated healthcare KPI reporting frameworks  
+
+---
+
+### 🔎 Project Classification
+
+Healthcare Analytics | SQL Data Analysis | Hospital Operations | Patient Admission Analysis | Business Intelligence | Data Exploration
