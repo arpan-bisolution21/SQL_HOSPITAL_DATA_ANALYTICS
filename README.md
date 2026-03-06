@@ -48,13 +48,13 @@ The Project is structured into Three Analytical Segments:
 2. **Patient & Treatment Insights**
 3. **Hospital Capacity & Resource Utilization**
 
-The SQL Queries transform Raw Hospital Records into Meaningful Insights that can support **Better Healthcare Operations Management**.
+The SQL Queries transform Raw Hospital Records into Meaningful Insights that can support Better Healthcare Operations Management.
 
 ---
 
 ## Data Overview
 
-The Dataset consists of **Four Relational Tables** representing Hospital Operations.
+The Dataset consists of Four Relational Tables representing Hospital Operations.
 
 ### Tables Included
 
@@ -69,7 +69,7 @@ The Dataset consists of **Four Relational Tables** representing Hospital Operati
 
 **June 6, 2018 – June 5, 2019**
 
-Because the Dataset spans a Partial Calendar Year, Admission Trends were analyzed using **Monthly Patterns instead of Yearly Comparisons**.
+Because the Dataset spans a Partial Calendar Year, Admission Trends were analyzed using Monthly Patterns instead of Yearly Comparisons.
 
 ---
 
@@ -94,13 +94,13 @@ SQL techniques used include:
 
 ### Analytical Focus
 
-The analysis focuses on:
+The Analysis focuses on:
 
-- Hospital **Length Of Stay (LOS)** Analysis  
-- **Doctor Workload Distribution**  
-- **Patient Readmission Patterns**  
-- **Hospital Bed Utilization Metrics**  
-- **Admission Trend Analysis**
+- Hospital Length Of Stay (LOS) Analysis  
+- Doctor Workload Distribution 
+- Patient Readmission Patterns 
+- Hospital Bed Utilization Metrics
+- Admission Trend Analysis
 
 ---
 
@@ -137,15 +137,15 @@ The analysis focuses on:
 
 ### For Hospital Administrators
 
-- Monitor diagnoses associated with **long hospital stays** to optimize treatment workflows.  
-- Evaluate doctor workload distribution to ensure balanced patient management.  
-- Implement discharge optimization strategies to improve bed availability.
+- Monitor Diagnoses associated with Long Hospital Stays to optimize Treatment Workflows.  
+- Evaluate Doctor's Workload Distributions to ensure Balanced Patient Management.  
+- Implement Discharge Optimization Strategies to improve Bed Availability.
 
 ### For Healthcare Operations Teams
 
-- Track frequent patient readmissions for early intervention programs.  
-- Improve patient record completeness (e.g., allergy information).  
-- Use admission trends to support better staffing and capacity planning.
+- Track Frequent Patient Readmissions for Early Intervention Programs.  
+- Improve Patient Record Completeness (e.g., Allergy Information).  
+- Use Admission Trends to support Better Staffing and Capacity Planning.
 
 ---
 
@@ -157,19 +157,19 @@ The analysis focuses on:
 
 ## Acknowledgement
 
-This project was developed as part of a structured Business Intelligence portfolio initiative focused on applying SQL-based data analysis to real-world operational datasets.
+This Project was developed as part of a Structured Business Intelligence Portfolio Initiative focused on applying SQL-Based Data Analysis to Real-World Operational Datasets.
 
-The project demonstrates how SQL can transform raw healthcare data into meaningful insights for operational decision-making.
+The Project demonstrates how SQL can transform Raw Healthcare Data into Meaningful Insights for Operational Decision-Making.
 
 ---
 
 ## Future Improvements
 
-- Extend the dataset to include multi-year hospital records for trend analysis  
-- Develop Power BI dashboards for interactive hospital performance monitoring  
-- Integrate predictive models for patient readmission risk  
-- Incorporate cost analysis metrics for hospital financial insights  
-- Build automated healthcare KPI reporting frameworks  
+- Extend the Dataset to include Multi-Year Hospital Records for Trend Analysis  
+- Develop Power BI Dashboards for Interactive Hospital Performance Monitoring  
+- Integrate Predictive Models for Patient Readmission Risk  
+- Incorporate Cost Analysis Metrics for Hospital Financial Insights  
+- Build Automated Healthcare KPI Reporting Frameworks 
 
 ---
 
