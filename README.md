@@ -19,57 +19,57 @@
 
 ## Business Objective
 
-To analyze hospital admission data and extract operational insights related to patient admissions, hospital stay durations, doctor workload, and healthcare resource utilization.
+To analyze Hospital Admission Data and extract Operational Insights related to Patient Admissions, Hospital Stay Durations, Doctor Workload, and Healthcare Resource Utilization.
 
-The goal of this project is to enable:
+The Goal of this Project is to enable:
 
-- Data-driven operational planning for hospital administrators  
-- Improved patient flow and bed utilization strategies  
-- Better monitoring of treatment patterns and readmissions  
-- Identification of diagnoses that consume the highest hospital resources  
+- Data-Driven Operational Planning for Hospital Administrators  
+- Improved Patient Flow and Bed Utilization Strategies  
+- Better Monitoring of Treatment Patterns and Readmissions  
+- Identification of Diagnoses that consume the Highest Hospital Resources  
 
 ---
 
 ## Project Brief
 
-This SQL-based analytics project explores hospital operational data to generate insights into patient admissions, treatment patterns, and hospital capacity usage.
+This SQL-Based Analytics projeyct explores Hospital Operational Data to generate Insights into Patient Admissions, Treatment Patterns, and Hospital Capacity Usages.
 
-The analysis focuses on answering practical management questions such as:
+The Analysis focuses on answering Practical Management Questions such as:
 
-- Which diagnoses lead to the longest hospital stays  
-- Which doctors handle the highest number of admissions  
-- Which patients experience frequent readmissions  
-- What diagnoses consume the most hospital bed-days  
-- How admissions fluctuate over time  
+- Which Diagnoses lead to the Longest Hospital Stays  
+- Which Doctors handle the Highest Number Of Admissions  
+- Which Patients experience Frequent Readmissions  
+- What Diagnoses consume the Most Hospital Bed-Days  
+- How Admissions fluctuate over Time  
 
-The project is structured into three analytical segments:
+The Project is structured into Three Analytical Segments:
 
 1. **Operational Efficiency Analysis**
 2. **Patient & Treatment Insights**
 3. **Hospital Capacity & Resource Utilization**
 
-The SQL queries transform raw hospital records into meaningful insights that can support **better healthcare operations management**.
+The SQL Queries transform Raw Hospital Records into Meaningful Insights that can support **Better Healthcare Operations Management**.
 
 ---
 
 ## Data Overview
 
-The dataset consists of **four relational tables** representing hospital operations.
+The Dataset consists of **Four Relational Tables** representing Hospital Operations.
 
 ### Tables Included
 
 | Table | Description |
 |------|-------------|
-| Admissions | Patient admission records including diagnosis, admission date, discharge date, and attending doctor |
-| Patients | Patient demographic information |
-| Doctors | Doctor details and medical specialties |
-| Province Names | Mapping table for province identification |
+| Admissions | Patient Admissions Records including Diagnosis, Admission Date, Discharge Date, and Attending Doctor |
+| Patients | Patient Demographic Information |
+| Doctors | Doctor Details and Medical Specialties |
+| Province Names | Mapping Table for Province Identification |
 
 ### Dataset Coverage
 
 **June 6, 2018 – June 5, 2019**
 
-Because the dataset spans a partial calendar year, admission trends were analyzed using **monthly patterns instead of yearly comparisons**.
+Because the Dataset spans a Partial Calendar Year, Admission Trends were analyzed using **Monthly Patterns instead of Yearly Comparisons**.
 
 ---
 
@@ -77,30 +77,30 @@ Because the dataset spans a partial calendar year, admission trends were analyze
 
 ### Data Preparation
 
-- Multi-table relational dataset loading
-- Data validation and quality checks
-- Filtering inconsistent records (invalid discharge dates)
+- Multi-Table Relational Dataset Loading
+- Data Validation and Quality Checks
+- Filtering Inconsistent Records (Invalid Discharge Dates)
 
 ### Data Analysis
 
 SQL techniques used include:
 
-- INNER JOIN for relational data analysis  
-- Aggregation functions (`COUNT`, `AVG`, `SUM`)  
-- Date functions (`DATEDIFF`, `DATE_FORMAT`, `TIMESTAMPDIFF`)  
-- Conditional logic using `CASE`  
-- Grouping and filtering using `GROUP BY` and `HAVING`  
-- Subqueries for advanced analytical calculations  
+- INNER JOIN for Relational Data Analysis  
+- Aggregation Functions (`COUNT`, `AVG`, `SUM`)  
+- Date Functions (`DATEDIFF`, `DATE_FORMAT`, `TIMESTAMPDIFF`)  
+- Conditional Logic using `CASE`  
+- Grouping and Filtering using `GROUP BY` and `HAVING`  
+- Subqueries for Advanced Analytical Calculations  
 
 ### Analytical Focus
 
 The analysis focuses on:
 
-- Hospital **Length of Stay (LOS)** analysis  
-- **Doctor workload distribution**  
-- **Patient readmission patterns**  
-- **Hospital bed utilization metrics**  
-- **Admission trend analysis**
+- Hospital **Length Of Stay (LOS)** Analysis  
+- **Doctor Workload Distribution**  
+- **Patient Readmission Patterns**  
+- **Hospital Bed Utilization Metrics**  
+- **Admission Trend Analysis**
 
 ---
 
