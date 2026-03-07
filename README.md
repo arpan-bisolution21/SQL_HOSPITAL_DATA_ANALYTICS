@@ -96,7 +96,7 @@ SQL techniques used include:
 
 The Analysis focuses on:
 
-- Hospital Length of Stay (LOS) Analysis  
+- Hospital Length of Stays (LOSs) Analysis  
 - Doctor Workload Distribution 
 - Patient Readmission Patterns 
 - Hospital Bed Utilization Metrics
