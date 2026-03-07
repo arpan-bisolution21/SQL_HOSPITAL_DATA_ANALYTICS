@@ -37,7 +37,7 @@ This SQL-Based Analytics projeyct explores Hospital Operational Data to generate
 The Analysis focuses on answering Practical Management Questions such as:
 
 - Which Diagnoses lead to the Longest Hospital Stays  
-- Which Doctors handle the Highest Number Of Admissions  
+- Which Doctors handle the Highest Number of Admissions  
 - Which Patients experience Frequent Readmissions  
 - What Diagnoses consume the Most Hospital Bed-Days  
 - How Admissions fluctuate over Time  
@@ -48,7 +48,7 @@ The Project is structured into Three Analytical Segments:
 2. **Patient & Treatment Insights**
 3. **Hospital Capacity & Resource Utilization**
 
-The SQL Queries transform Raw Hospital Records into Meaningful Insights that can support Better Healthcare Operations Management.
+The SQL Queries transform Raw Hospital Records into Meaningful Insights that can support Effective Healthcare Operations Management.
 
 ---
 
@@ -96,7 +96,7 @@ SQL techniques used include:
 
 The Analysis focuses on:
 
-- Hospital Length Of Stay (LOS) Analysis  
+- Hospital Length of Stay (LOS) Analysis  
 - Doctor Workload Distribution 
 - Patient Readmission Patterns 
 - Hospital Bed Utilization Metrics
@@ -108,28 +108,28 @@ The Analysis focuses on:
 
 ### 1️⃣ Operational Efficiency
 
-- Hospital length of stay varies significantly across diagnoses.  
-- Some doctors manage considerably higher admission volumes than others.  
-- Long hospital stays contribute to increased bed utilization pressure.  
-- Certain cities and provinces generate higher patient admission volumes.
+- Total Admissions count to 5067.
+- Hospital Average Length of Stays - 4.49 Days and Average Admission Figures - 13.88.  
+- Dr. Claude Walls manages considerably Higher Admission Volumes (214) than others.  
+- 3 Months - October (448), July (448) & August (439); have come with Peak Admissions.  
+- 3 Cities - Hamilton (2169), Toronto (363) & Burlington (319) generate Higher Patient Admission Volumes.
 
 ---
 
 ### 2️⃣ Patient & Treatment Insights
 
-- A small group of patients accounts for multiple hospital admissions.  
-- Certain diagnoses show higher likelihood of readmissions.  
-- Patient demographic patterns influence admission frequency.  
-- Missing allergy records highlight potential data quality issues.
+- Patients Emil Owens & Luanne Matthews account for Multiple Admissions (4 Times).
+- 5 Diagonosis show Higher Likelihood of Readmissions.  
+- Male Patients count to 2740 & Female Patients count to 2327.  
+- Missing Allergy Records (2059) highlight Potential Data Quality Issues.
 
 ---
 
 ### 3️⃣ Hospital Capacity & Resource Utilization
 
-- A limited number of diagnoses consume a large share of total hospital bed-days.  
-- Long-stay admissions significantly affect hospital capacity.  
-- Monthly admission patterns reveal fluctuating hospital demand.  
-- Some treatment categories require longer resource allocation.
+- Congestive Heart Failures consume a large share of Total Hospital Bed-Days (1225).   
+- 1685 Patinets have Repeat Visit Records. (>1)  
+- Province British Columbia records the Longest Average Length of Stay - 5.36 Days.
 
 ---
 
