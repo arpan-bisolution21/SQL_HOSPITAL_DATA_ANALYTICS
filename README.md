@@ -151,7 +151,7 @@ The Analysis focuses on:
 
 ## Project Link
 
-🔗 
+🔗 https://github.com/arpan-bisolution21/SQL_HOSPITAL_DATA_ANALYSIS/blob/9d2586fd6550be877c6ab17f1c02e7b0c197a821/05.HOSPITAL_DATA_ANALYSIS_PROJECT.sql 
 
 ---
 
