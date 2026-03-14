@@ -1,4 +1,4 @@
-#   Hospital Data Analytics Project
+#   Hospital Data Analysis Project
 ### SQL-Based Healthcare Operations Analysis
 
 ---
