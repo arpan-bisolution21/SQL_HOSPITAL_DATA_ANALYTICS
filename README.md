@@ -44,9 +44,9 @@ The Analysis focuses on answering Practical Management Questions such as:
 
 The Project is structured into Three Analytical Segments:
 
-1. **Operational Efficiency Analysis**
-2. **Patient & Treatment Insights**
-3. **Hospital Capacity & Resource Utilization**
+1. Operational Efficiency Analysis
+2. Patient & Treatment Insights
+3. Hospital Capacity & Resource Utilization
 
 The SQL Queries transform Raw Hospital Records into Meaningful Insights that can support Effective Healthcare Operations Management.
 
@@ -67,7 +67,7 @@ The Dataset consists of Four Relational Tables representing Hospital Operations.
 
 ### Dataset Coverage
 
-**June 6, 2018 – June 5, 2019**
+June 6, 2018 – June 5, 2019
 
 Because the Dataset spans a Partial Calendar Year, Admission Trends were analyzed using Monthly Patterns instead of Yearly Comparisons.
 
